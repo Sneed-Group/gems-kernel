@@ -13,19 +13,7 @@
 #include "debug.h" //panic and stuff
 #include "midi.h" //PC speaker MIDI support
 #include "kbd.h" //keyboard stuff
-#include "THIRDPARTY/nanobyte_os/kernel/memory.h"
-#include "THIRDPARTY/nanobyte_os/kernel/hal/hal.h"
-#include "THIRDPARTY/nanobyte_os/kernel/arch/i686/irq.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/x86.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/fat.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/stdio.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/x86.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/disk.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/fat.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/memdefs.h"
-#include "THIRDPARTY/lwext4-master/include/ext4_fs.h"
-#include "THIRDPARTY/nanobyte_os/bootloader/stage2/minmax.h"
-#include "THIRDPARTY/nanomodbus/nanomodbus.h"
+#include "thirdparty.h"
 //#include "crashhand.h" //Comming Soon(TM)
 //#include "sticky.h" //module deprecated. use new stick function and new function called delay.
 //#include "diamondfs.h" //BORKED - USE AT YOUR OWN RISK
