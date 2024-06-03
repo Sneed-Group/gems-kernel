@@ -15,7 +15,7 @@
 #include "kbd.h" //keyboard stuff
 #include "thirdparty.h"
 //#include "crashhand.h" //Comming Soon(TM)
-//#include "sticky.h" //module deprecated. use new stick function and new function called delay.
+//#include "sticky.h" //module deprecated. use new stick function and new function called wait.
 //#include "diamondfs.h" //BORKED - USE AT YOUR OWN RISK
 #include "rushell.h" // Should always be at the bottom (Testing shell, only displays output and plays "music." Does not actually function as a shell.)
 
@@ -43,19 +43,18 @@ void exit() {
 }
 
 void os() {
-	rloadstring("welcomescreen");
-	rloadstring("helpscreen");
+	rloadstring("welcomescreen", "", "");
+	rloadstring("helpscreen", "", "");
 	//panic("TEST"); //uncomment to test panicing
-	rloadstring("debugRainbow");
+	rloadstring("debugRainbow", "", "");
 	while ( 1 == 1 ) {
-		rloadstring("basickeys");
+		rloadstring("basickeys", "", "");
 	}
 }
 
 void kern() {
 	//extern bootloader();
 	//bootloader();
-    haltLoop();
 	clear(lastVGATextColor());
 	print("GEMS OK, WAITING A FEW TICKS TO TEST TIME... \n");
 	wait(10); //ok? ok.
