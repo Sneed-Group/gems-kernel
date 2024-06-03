@@ -26,7 +26,6 @@
 #include "THIRDPARTY/lwext4-master/include/ext4_fs.h"
 #include "THIRDPARTY/nanobyte_os/bootloader/stage2/minmax.h"
 #include "THIRDPARTY/nanomodbus/nanomodbus.h"
-//#include "keymap.h" // not ready yet...
 //#include "crashhand.h" //Comming Soon(TM)
 //#include "sticky.h" //module deprecated. use new stick function and new function called delay.
 //#include "diamondfs.h" //BORKED - USE AT YOUR OWN RISK
@@ -94,3 +93,4 @@ int kernel_main(struct multiboot_info* mbd, unsigned int magic) {
 	kern();
 }
 //and we all *shut* down...
+//#include "keymap.h" // not ready yet...
